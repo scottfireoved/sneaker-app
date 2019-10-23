@@ -7,9 +7,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  registerMode: boolean = false;
+  registerMode = false;
   values: any;
-  
+
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this.registerMode = !this.registerMode;
   }
 
-  cancelRegisterMode(registerMode: boolean){
+  cancelRegisterMode(registerMode: boolean) {
     this.registerMode = registerMode;
   }
 
